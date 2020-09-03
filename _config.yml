@@ -292,4 +292,4 @@ defaults:
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : lucaseo90
+    shortname            : https-lucaseo90-github-io-lucaseo90
