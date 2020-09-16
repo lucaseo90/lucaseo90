@@ -1,5 +1,8 @@
 ---
 title: Testing, Continuous Integration, and Deployment
+tags: 
+- jhipster
+- study
 ---
 
 # Fixing and running tests

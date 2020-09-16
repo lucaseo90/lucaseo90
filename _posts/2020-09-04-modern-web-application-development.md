@@ -6,6 +6,9 @@ comments: true
 share: true
 related: true
 layout: single
+tags: 
+- jhipster
+- study
 ---
 
 ### What is the full stack developer?

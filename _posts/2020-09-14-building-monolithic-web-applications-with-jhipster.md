@@ -1,5 +1,8 @@
 ---
 title: Building Monolithic Web Applications with JHipster
+tags: 
+- jhipster
+- study
 ---
 
 # The environment 

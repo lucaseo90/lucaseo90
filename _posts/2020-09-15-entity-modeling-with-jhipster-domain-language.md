@@ -1,5 +1,8 @@
 ---
 title: Entity Modeling with JHipster Domain Language
+tags: 
+- jhipster
+- study
 ---
 
 # What is the JDL

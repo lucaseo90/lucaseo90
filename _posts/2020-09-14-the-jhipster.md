@@ -1,5 +1,8 @@
 ---
 title: The JHipster
+tags: 
+- jhipster
+- study
 ---
 
 ### What is the JHipster
