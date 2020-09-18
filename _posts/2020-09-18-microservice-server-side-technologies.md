@@ -1,12 +1,12 @@
 ---
-title: Modern Web Application Development
+title: Microservice Server-Side Technologies
 author_profile: true
 read_time: true
 comments: true
 share: true
 related: true
 layout: single
-tags: 
+tags:
 - jhipster
 - study
 ---
