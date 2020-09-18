@@ -3,6 +3,8 @@ title: The JHipster
 tags: 
 - jhipster
 - study
+toc: true
+toc_sticky: true
 ---
 
 ### What is the JHipster

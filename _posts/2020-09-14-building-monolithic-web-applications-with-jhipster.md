@@ -3,6 +3,8 @@ title: Building Monolithic Web Applications with JHipster
 tags: 
 - jhipster
 - study
+toc: true
+toc_sticky: true
 ---
 
 # The environment 

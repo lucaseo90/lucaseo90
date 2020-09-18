@@ -3,6 +3,8 @@ title: Entity Modeling with JHipster Domain Language
 tags: 
 - jhipster
 - study
+toc: true
+toc_sticky: true
 ---
 
 # What is the JDL

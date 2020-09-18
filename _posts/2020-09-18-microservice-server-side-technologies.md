@@ -9,6 +9,8 @@ layout: single
 tags:
 - jhipster
 - study
+toc: true
+toc_sticky: true
 ---
 
 # Microservice applications versus monolithis
