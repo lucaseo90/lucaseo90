@@ -14,4 +14,5 @@ group :jekyll_plugins do
   gem "jemoji"
   gem "jekyll-algolia"
   gem "jekyll-include-cache"
+  gem "jekyll-admin"
 end
