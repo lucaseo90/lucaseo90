@@ -19,20 +19,20 @@ toc_sticky: true
 # 설치
 
 ## Vagrant 설치
-```shell script
+~~~
 brew cask install virtualbox
 brew cask install vagrant
 brew cask install vagrant-manager  
-```
+~~~
 
 ## MiniKF 설치
-```shell script
+~~~
 vagrant init arrikto/minikf
 vagrant up
-```
+~~~
 
 ## MiniKF 업그레이드
-```shell script
+```
 vagrant box update
 vagrant box list
 vagrant plugin update vagrant-persistent-storage  
