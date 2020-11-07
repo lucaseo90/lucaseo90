@@ -12,6 +12,8 @@ tags:
 - Vagrant
 toc: true
 toc_sticky: true
+markdown: kramdown
+highlighter: rouge
 ---
 
 # 들어가면서
@@ -19,17 +21,17 @@ toc_sticky: true
 # 설치
 
 ## Vagrant 설치
-~~~
+```
 brew cask install virtualbox
 brew cask install vagrant
 brew cask install vagrant-manager  
-~~~
+```
 
 ## MiniKF 설치
-~~~
+```
 vagrant init arrikto/minikf
 vagrant up
-~~~
+```
 
 ## MiniKF 업그레이드
 ```
