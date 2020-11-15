@@ -14,6 +14,7 @@ toc: true
 toc_sticky: true
 markdown: kramdown
 highlighter: rouge
+categories: Kubeflow
 ---
 
 # 들어가면서

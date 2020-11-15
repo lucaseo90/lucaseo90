@@ -1,5 +1,6 @@
 ---
 title: 'Kubeflow Tutorial: An end-to-end ML pipeline on-prem'
+categories: Kubeflow
 ---
 
 # 실습

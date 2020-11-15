@@ -1,5 +1,6 @@
 ---
 title: Docker Troubleshooting List
+categories: Docker
 ---
 
 # Docker daemon이 정상적으로 동작하지 않음
