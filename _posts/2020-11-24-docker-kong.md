@@ -1,5 +1,5 @@
 ---
-title: Docker 환경에서 KONG 설치
+title: Docker 환경에서 Kong 설치
 layout: single
 author_profile: true
 read_time: true
@@ -18,6 +18,8 @@ categories:
 - Practice
 ---
 
+> 2020-11-25 데이터베이스를 함께 구성하는 경우 `볼륨 생성` 및 `설정 파일 작성`을 할 필요 없다. 데이터베이스를 사용하지 않기 때문에 미리 정의된 설정을 기반으로 구성하기 위해서 필요로 하는 절차로 이해했다.
+
 # 들어가면서
 gRPC 게이트와 관련해서 Kong을 사용해볼 필요가 생겼다.
 
@@ -27,53 +29,6 @@ gRPC 게이트와 관련해서 Kong을 사용해볼 필요가 생겼다.
 ## 네트워크 생성
 ```shell
 $ docker network create kong-net
-```
-## 디스크 볼륨 생성
-```
-$ docker volume create kong-vol
-```
-## 설정 파일 작성
-```
-$ docker volume inspect kong-vol
-```
-
-명령을 수행하면 아래와 같이 터미널에 출력되는데 Ubuntu 18.04에서 설치할 때는 해당 경로에 디렉토리가 미리 구성되어 있었는데 MacOS의 경우 `/docker/` 부터 디렉토리가 없었다.
-
-> 디렉토리 구성해주고 권한 설정이 필요하다.
-
-```
-[
-    {
-        "CreatedAt": "2020-11-24T10:11:22Z",
-        "Driver": "local",
-        "Labels": {},
-        "Mountpoint": "/var/lib/docker/volumes/kong-vol/_data",
-        "Name": "kong-vol",
-        "Options": {},
-        "Scope": "local"
-    }
-]
-```
-
-`kong.yml` 파일을 vim으로 열어서 아래와 같이 설정해줬다.
-
-```yaml
-_format_version: "1.1"
- 
-services:
-- name: my-service
-  url: https://example.com
-  plugins:
-  - name: key-auth
-  routes:
-  - name: my-route
-    paths:
-    - /
- 
-consumers:
-- username: my-user
-  keyauth_credentials:
-  - key: my-key
 ```
 
 ## 데이터베이스 컨테이너 생성
@@ -148,6 +103,8 @@ Konga 까지 설치된 후 `http://localhost:1337/`로 접근하면 관리자 �
 Kong과 연결을 해주면 다음과 같은 화면을 확인할 수 있다.
 
 ![Konga Dashboard](https://user-images.githubusercontent.com/6668548/100094868-01ceb800-2e9d-11eb-9323-8f1fa2a2b5f5.png)
+
 # Reference
 * [오픈소스 API 게이트웨이 Kong](https://bcho.tistory.com/1361)
 * dockerhub - [kong](https://hub.docker.com/_/kong)
+* kong - [Docker Installation](https://docs.konghq.com/install/docker/?_ga=2.130503753.753085870.1606287461-171006562.1606287461)
