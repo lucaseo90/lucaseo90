@@ -23,6 +23,19 @@ categories:
 # 들어가면서
 gRPC와 관련하여 API 게이트웨이 기능을 하는 Kong을 사용해볼 필요가 생겼다.
 
+## Kong Gateway
+Kong Gateway는 마이크로 서비스에 최적화된 오픈 소스 경량 API 게이트웨이로 탁월한 지연 시간, 성능 및 확장성을 제공한다.
+
+기본적으로 구성된 프록시 포트 8000 및 8443에서 트래픽을 수신하는데, 들어오는 클라이언트 API 요청을 확인하여 적절한 백엔드 API로 라우팅한다. 요청을 라우팅하고 응답을 제공하는 동안 필요에 따라 플러그인을 이용해 정책을 적용 할 수 있다.
+
+예를 들어 요청을 라우팅하기 전에 클라이언트에 인증이 필요할 수 있는데, 이러한 기능은 몇 가지 이점을 제공한다. 
+* Kong Gateway가 인증을 처리하기 때문에 서비스에는 자체 인증 로직이 필요하지 않음
+* 서비스는 유효한 요청만 수신하므로 잘못된 요청을 처리하는 데 주기가 낭비되지 않음
+* 트래픽의 중앙 가시성을 위해 모든 요청이 기록됨
+
+![Traffic flow in Kong gateway](https://docs.konghq.com/assets/images/docs/getting-started-guide/gateway-traffic.png)
+
+API 게이트웨이 기능에 충실한 다양한 기능들을 제공 하고 있으며, 엔터프라이즈 환경에서 유용할것 같은 기능들은 제한이 있어 보인다.
 
 # Docker 환경에서 Kong 설치
 
@@ -108,3 +121,4 @@ Kong과 연결을 해주면 다음과 같은 화면을 확인할 수 있다.
 * [오픈소스 API 게이트웨이 Kong](https://bcho.tistory.com/1361)
 * dockerhub - [kong](https://hub.docker.com/_/kong)
 * kong - [Docker Installation](https://docs.konghq.com/install/docker/?_ga=2.130503753.753085870.1606287461-171006562.1606287461)
+* kong - [Getting Started Guide](https://docs.konghq.com/getting-started-guide/2.2.x/overview/)
