@@ -1,5 +1,5 @@
 ---
-title: Kong을 이용한 gRPC 테스트
+title: Kong을 이용한 gRPC-Gateway Plugin 테스트
 layout: single
 author_profile: true
 read_time: true
