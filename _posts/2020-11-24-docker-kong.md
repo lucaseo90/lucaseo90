@@ -20,6 +20,8 @@ categories:
 
 > 2020-11-25 데이터베이스를 함께 구성하는 경우 `볼륨 생성` 및 `설정 파일 작성`을 할 필요 없다. 데이터베이스를 사용하지 않기 때문에 미리 정의된 설정을 기반으로 구성하기 위해서 필요로 하는 절차로 이해했다.
 
+> 2021-01-03 gRPC를 지원하면서 동시에 HTTP 1.x 요청을 게이트웨이 하기 위해, Kong Container 실행 시 `KONG_PROXY_LISTEN` 옵션 및 Port 설정을 수정했다.
+
 # 들어가면서
 gRPC와 관련하여 API 게이트웨이 기능을 하는 Kong을 사용해볼 필요가 생겼다.
 
@@ -77,7 +79,7 @@ $ docker run --rm \
 Kong 컨테이너를 생성한다.
 
 ```shell
-$ docker run -d --name kong \
+docker run -d --name kong \
     --network=kong-net \
     --link kong-database:kong-database \
     -e "KONG_DATABASE=postgres" \
@@ -88,10 +90,13 @@ $ docker run -d --name kong \
     -e "KONG_PROXY_ERROR_LOG=/dev/stderr" \
     -e "KONG_ADMIN_ERROR_LOG=/dev/stderr" \
     -e "KONG_ADMIN_LISTEN=0.0.0.0:8001, 0.0.0.0:8444 ssl" \
+    -e "KONG_PROXY_LISTEN=0.0.0.0:8000, 0.0.0.0:8443 http2 ssl, 0.0.0.0:9080 http2, 0.0.0.0:9081 http2 ssl” \
     -p 8000:8000 \
     -p 8443:8443 \
     -p 8001:8001 \
     -p 8444:8444 \
+    -p 9080:9080 \
+    -p 9081:9081 \
     kong
 ```
 
