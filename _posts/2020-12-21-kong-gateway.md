@@ -23,7 +23,7 @@ Kong Gateway를 이용한 gRPC 게이트웨이와 관련된 기능 테스트를 
 # 실습
 진행하고자 하는 테스트는 서버 2대가 실행되어 있을 때, Kong Gateway에서 각각 서버에 라우트 할 수 있도록 서비스 및 라우트를 등록하여 요청했을 때 의도하는데로 값을 조회해 올 수 있는지 확인하고자 하였다.
 
-설치는 [Docker 환경에서 Kong 설치](https://lucaseo90.github.io/lucaseo90/practice/docker-kong/) 환경과 같다.
+설치는 [Docker 환경에서 Kong 설치](https://lucaseo90.github.io/practice/docker-kong/) 환경과 같다.
 
 실습을 위해 REST API 요청 가능한 서버가 두개 필요하여, [json-server](https://github.com/typicode/json-server) 를 활용했다. 
 

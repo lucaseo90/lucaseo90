@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lucaseo90.github.io/lucaseo90/sitemap.xml
+Sitemap: https://lucaseo90.github.io/sitemap.xml
