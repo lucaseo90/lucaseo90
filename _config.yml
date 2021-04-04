@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "A Time Limited Life"
+title                    : "Back to the basics"
 title_separator          : "-"
-subtitle                 : "Version 1.0" # site tagline that appears below site title in masthead
+subtitle                 : "Version 2.0" # site tagline that appears below site title in masthead
 name                     : "Lucas (Hyunseok Seo)"
-description              : "To Study for Full Stack Development"
+description              : "Personal Note"
 url                      : "https://lucaseo90.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "github.com/lucaseo90" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
