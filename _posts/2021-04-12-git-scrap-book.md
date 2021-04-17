@@ -58,3 +58,19 @@ $ git merge [issue number]-[issue summary]
 ```shell
 $ git push origin -d [issue number]-[issue summary] && git branch -d [issue number]-[issue summary]
 ```
+
+# [포크한 깃허브 저장소를 원본 저장소와 동기화 하기](https://hyunjun19.github.io/2018/03/09/github-fork-syncing/)
+```shell
+$ git remote -v
+$ git remote add upstream [remote repository address]
+$ git remote -v
+$ git fetch upstream
+$ git merge upstream/master
+```
+* git remote -v : 설정된 리모트 저장소 확인
+* git remote add upstream [remote repository address] : 리모트 저장소 추가, upstream은 추가되는 저장소의 이름으로 변경 가능
+* git remote -v : 설정된 리모트 저장소 확인
+* git fetch upstream : 이름으로 지정한 저장소의 코드를 fetch
+* git merge upstream/master : 현재 레포지토리에 리모트 저장소의 코드를 merge
+* git push : fork된 저장소로 push
+
