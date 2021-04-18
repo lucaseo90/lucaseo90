@@ -7,7 +7,7 @@ comments: true
 share: true
 related: true
 tags:
-- KONG
+- Kong
 - API Gateway
 - Docker
 toc: true

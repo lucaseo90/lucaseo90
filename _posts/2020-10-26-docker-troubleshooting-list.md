@@ -1,6 +1,22 @@
 ---
 title: Docker Troubleshooting List
-categories: Docker
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+tags:
+- Kubeflow
+- MiniKF
+- Vagrant
+- minikube
+toc: true
+toc_sticky: true
+markdown: kramdown
+highlighter: rouge
+categories:
+- Docker
 ---
 
 # Docker daemon이 정상적으로 동작하지 않음

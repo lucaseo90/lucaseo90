@@ -1,5 +1,20 @@
 ---
 title: gRPC Gateway
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+tags:
+- gRPC
+- gRPC Gateway
+toc: true
+toc_sticky: true
+markdown: kramdown
+highlighter: rouge
+categories:
+- Practice
 ---
 
 # gRPC Gateway란?

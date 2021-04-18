@@ -1,5 +1,21 @@
 ---
-title: Kong Plugin List
+title: Docker 환경에서 Kong 설치
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+tags:
+- Kong
+- API Gateway
+- Docker
+toc: true
+toc_sticky: true
+markdown: kramdown
+highlighter: rouge
+categories:
+- Practice
 ---
 
 # 들어가면서

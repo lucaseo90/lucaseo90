@@ -1,5 +1,17 @@
 ---
-title: 'Kubeflow Tutorial: An end-to-end ML pipeline on-prem'
+title: Kubeflow Tutorial: An end-to-end ML pipeline on-prem
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+tags:
+- Kubeflow
+toc: true
+toc_sticky: true
+markdown: kramdown
+highlighter: rouge
 categories: Kubeflow
 ---
 
