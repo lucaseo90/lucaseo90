@@ -74,3 +74,14 @@ $ git merge upstream/master
 * git merge upstream/master : 현재 레포지토리에 리모트 저장소의 코드를 merge
 * git push : fork된 저장소로 push
 
+# [Git add, commit, push 취소하기](https://velog.io/@hidaehyunlee/Git-add-commit-push-%EC%B7%A8%EC%86%8C%ED%95%98%EA%B8%B0)
+```shell
+$ git reset --soft HEAD^
+$ git reset --mixed HEAD^
+$ git reset HEAD^
+$ git reset HEAD~2
+$ git reset --hard HEAD^
+
+$ git reflog 
+$ git reset HEAD@[number] or $ git reset [commit id]
+```
