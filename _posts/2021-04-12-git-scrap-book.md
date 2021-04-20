@@ -85,3 +85,10 @@ $ git reset --hard HEAD^
 $ git reflog 
 $ git reset HEAD@[number] or $ git reset [commit id]
 ```
+
+# [Git remote branch 가져오기](https://cjh5414.github.io/get-git-remote-branch/)
+```shell
+$ git remote update
+$ git branch -r
+$ git checkout -b [branch name to create] [remote branch]
+```
