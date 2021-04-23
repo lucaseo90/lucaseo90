@@ -92,3 +92,12 @@ $ git remote update
 $ git branch -r
 $ git checkout -b [branch name to create] [remote branch]
 ```
+
+# [Git 커밋 메시지 수정하기](https://velog.io/@mayinjanuary/git-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%84%B8%EC%A7%80-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0-changing-commit-message)
+```shell
+$ git rebase -i HEAD~{n}
+수정하고자 하는 커밋에 대해 pick -> edit로 수정
+$ git commit --amend
+$ git rebase --continue
+$ git push -f
+```
