@@ -35,3 +35,12 @@ WHERE id IN (
 	) ${ALIAS}
 );	
 ```
+
+# MSSQL - [SQL Convert Date functions and formats](https://www.sqlshack.com/sql-convert-date-functions-and-formats/)
+# Mysql - [Date and Time Functions](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html)
+# Postgres - [Data Type Formatting Functions](https://www.postgresql.org/docs/current/functions-formatting.html)
+# Oracle - [Date Format Types](https://docs.oracle.com/cd/E41183_01/DR/Date_Format_Types.html)
+# Regex - [Validate Traditional Date Formats](https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s04.html)
+
+
+
